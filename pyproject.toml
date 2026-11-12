@@ -1,0 +1,31 @@
+[project]
+name = "mediqueue"
+version = "0.1.0"
+description = "MediQueue — Smart Queue Management System (PWA) built with NiceGUI and SQLModel"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "nicegui>=2.0",
+    "sqlmodel>=0.0.22",
+]
+
+[project.scripts]
+mediqueue = "app.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
+
+[tool.uv]
+package = true
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,37 @@
+{
+  "id": "/",
+  "name": "MediQueue — Smart Queue",
+  "short_name": "MediQueue",
+  "description": "Live hospital queue tracker for patients, staff and administrators.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f1f5f9",
+  "theme_color": "#0f766e",
+  "icons": [
+    {
+      "src": "/static/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/static/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/static/icons/icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    { "name": "Live queue", "url": "/" },
+    { "name": "Staff console", "url": "/staff" },
+    { "name": "Administration", "url": "/admin" }
+  ]
+}
